@@ -1,0 +1,21 @@
+{
+    "name": "developit/yii2-errorhandler",
+    "description": "yii2 error handler With the ability to search on google and stackoverflow and display results in order to find a quick solution.",
+    "type": "yii2-extension",
+    "keywords": ["yii2","extension","errorhandler"," yii2 error"," yii2 errorhandler"," error handler"," yii2 error handler"],
+    "license": "LGPL-3.0",
+    "authors": [
+        {
+            "name": "ehsan rezaei",
+            "email": "me@developit.ir"
+        }
+    ],
+    "require": {
+        "yiisoft/yii2": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "developit\\errorhandler\\": ""
+        }
+    }
+}
