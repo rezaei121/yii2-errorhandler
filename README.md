@@ -2,6 +2,8 @@ yii2 custom error handler
 =========================
 yii2 error handler With the ability to search on google, stackoverflow and yiiframework and display results in order to find a quick solution.
 
+![screenshot](http://www.developit.ir/tmp/errorhandler.png)
+
 Installation
 ------------
 
