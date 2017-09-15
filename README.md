@@ -1,6 +1,6 @@
 yii2 custom error handler
 =========================
-yii2 error handler With the ability to search on google and stackoverflow and display results in order to find a quick solution.
+yii2 error handler With the ability to search on google, stackoverflow and yiiframework and display results in order to find a quick solution.
 
 Installation
 ------------
@@ -10,7 +10,7 @@ The preferred way to install this extension is through [composer](http://getcomp
 Either run
 
 ```
-php composer.phar require --prefer-dist developit/yii2-errorhandler "*"
+composer require developit/yii2-errorhandler
 ```
 
 or add
@@ -25,7 +25,34 @@ to the require section of your `composer.json` file.
 Usage
 -----
 
-Once the extension is installed, simply use it in your code by  :
+create a action(eg. errorhandler)
 
 ```php
-<?= \developit\errorhandler\AutoloadExample::widget(); ?>```
+    /**
+     * @inheritdoc
+     */
+    public function actions()
+    {
+        return [
+            'error' => [
+                'class' => 'yii\web\ErrorAction',
+            ],
+            'errorhandler' => [
+                'class' => 'developit\errorhandler\ErrorHandlerAction',
+            ]
+        ];
+    }
+```
+
+update errorHandler on config.php
+
+```php
+        'errorHandler' => [
+            'class' => 'developit\errorhandler\ErrorHandler',
+            'errorAction' => 'site/error',
+        ],
+```
+
+License
+-------
+yii2-errorhandler is an open source project created by Ehsan Rezaei(http://www.developit.ir) that is licensed under GPL-3.0.
