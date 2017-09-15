@@ -1,0 +1,13 @@
+.buttons {margin-top: 30px;}
+.buttons button{background-color: #e51717; padding: 10px 15px 10px 15px; border-radius: 2px; border: none; color: #FFFFFF}
+.buttons button:hover{background-color: #e5444d; cursor: pointer}
+#search-result {margin-bottom: 20px; font-family: Arial, sans-serif;}
+#search-result a{
+    color: #505050;
+}
+#search-result a:hover{
+    color: #000;
+}
+.search-title {padding: 15px 50px 15px 50px; background-color: #fafafa; margin-bottom: 10px;}
+.search-item {padding: 5px 60px 5px 60px; background-color: #ffffff; font-size: 14px;}
+.search-item-line {float:left; padding-right: 50px; color: #aaa; font-size: 12px;}
